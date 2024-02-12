@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+    background: #000;
+    font-family: "poppins";
+    color: white;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.nav-bar .logo img{
+    width: 100px;
+    filter: drop-shadow(7px 5px 13px white);
+
+}
+
+
+
+.nav-bar .list{
+    display: flex;
+    gap: 45px;
+}
+
+
+.nav-bar .nike{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "outfit";
+}
+
+.main{
+    height: 90vh;
+    display: flex;
+    margin: 20px 6%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main .info h1{
+font-size: 7rem;
+color: #f43b47;
+font-style: italic;
+}
+
+.main .info h2{
+    font-size: 3.4rem;
+    font-weight: bold;
+    color: #6713d2;
+    font-family: "outfit", sans-serif;
+    line-height: 1.8;
+}
+
+.main .info p{
+    max-width: 550px;
+}
+
+.main .btn{
+    display: flex;
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .btn button{
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 7px;
+    border: none;
+    font-family: "poppins";
+    background: #667eea;
+    color: white;
+}
+
+
+.image img{
+    animation: move 1.3s alternate infinite;
+    cursor: pointer;
+}
+
+.image img:hover{
+    animation-play-state: paused;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-20%);
+    }
+}
